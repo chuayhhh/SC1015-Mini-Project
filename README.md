@@ -7,7 +7,7 @@
 
 **Members:**  
 - Chua Yu Hui (YCHUA056@e.ntu.edu.sg) 
-- Megan Phua Wei Lin, (MPHUA006@e.ntu.edu.sg)
+- Megan Phua Wei Lin (MPHUA006@e.ntu.edu.sg)
 - Khoo An Xian (KHOO0212@e.ntu.edu.sg)  
 
 ---
@@ -64,8 +64,7 @@ The dataset consists of various features, including:
    - For categorical features (e.g., `Loan Status`), used mode imputation or dropped rows with excessive missing data.
 
 4. **Encoding Categorical Variables:**
-   - Converted categorical features into numerical format using one-hot encoding or label encoding. For example:
-     - `Loan Status`: Converted "Approved", "Rejected", "Default" into numerical labels.
+   - Converted categorical features into numerical format using one-hot encoding or label encoding. 
 
 5. **Feature Engineering:**
    - Derived new features such as:
