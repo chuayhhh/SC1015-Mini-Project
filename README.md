@@ -6,9 +6,9 @@
 **Group:** 7 
 
 **Members:**  
-- Chua Yu Hui (YCHUA056@e.ntu.edu.sg) 
-- Megan Phua Wei Lin (MPHUA006@e.ntu.edu.sg)
-- Khoo An Xian (KHOO0212@e.ntu.edu.sg)  
+- Chua Yu Hui (U2323111H) 
+- Megan Phua Wei Lin ()
+- Khoo An Xian ()  
 
 ---
 
