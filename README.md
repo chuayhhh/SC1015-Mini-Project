@@ -14,12 +14,6 @@
 
 ## Description
 This repository contains the datasets, Jupyter Notebooks, and source materials used in our SC1015 Mini Project. The focus of this project is to analyze credit risk using financial and loan-related data to derive actionable insights and improve loan approval decision-making processes.
-
-Through this project, we aim to:
-- Explore patterns in the dataset related to loan approvals, defaults, and financial stability.
-- Implement machine learning models to predict creditworthiness.
-- Provide data-driven recommendations for financial institutions to minimize risk and maximize efficiency.
-
 ---
 
 ## Table of Contents
@@ -41,7 +35,8 @@ The primary goal of this project is to analyze credit risk by:
 3. Can we build a reliable predictive model for loan default risk?
 
 ### Relevance:
-Credit risk analysis is critical for financial institutions to minimize losses and improve lending strategies. By understanding customer behaviors and risk factors, in
+Credit risk analysis is critical for financial institutions to minimize losses and improve lending strategies. 
+Our team identified the problem of predicting loan default risks using a real-world credit dataset (credit_train.csv). The primary goal is to determine whether a borrower will fully repay their loan or default, using various financial, personal, and credit-related features. We chose this problem due to its real-world relevance in banking, risk assessment, and lending institutions.
 
 ## 2. Data Preparation and Cleaning
 
@@ -54,6 +49,7 @@ The dataset consists of various features, including:
 ### Steps Taken:
 1. **Loading the Dataset:** 
    - Imported the dataset and examined the structure, size, and data types.
+   - Selecting the first 20,000 rows for manageable processing.
 
 2. **Feature Selection:**
    - Retained relevant features for analysis, such as `Credit Score`, `Loan Amount`, `Annual Income`, `Loan Status`, `Debt-to-Income Ratio`, and `Number of Delinquencies`.
@@ -73,6 +69,8 @@ The dataset consists of various features, including:
 
 6. **Data Splitting:**
    - Split the dataset into training and test sets for machine learning analysis (e.g., 80% training, 20% testing).
+
+   This allowed for more insightful relationships to be modeled in our analysis and prediction stages.
 
 ## 3. Exploratory Data Analysis
 
@@ -105,11 +103,40 @@ The dataset consists of various features, including:
 6. **Outlier Detection:**
    - Detected anomalies in variables such as `Credit Score`, `Loan Amount`, and `Debt-to-Income Ratio`.
 
-## 4. Add
+### Observed Key Relationships:
+   - High correlation between Monthly Debt and Annual Income.
+   - Business loans had a lower repayment rate compared to personal or education loans.
+   - Short-term loans showed higher full repayment rates.
 
-## 5. Add
+This helped refine the features most likely to influence repayment behavior.
 
-## 6. Add
+## 4. Machine Learning Model & Methodology
 
-## 7. References
-   - Add later
+### We built a supervised classification model using:
+   - Logistic Regression
+   - Random Forest Classifier
+   - XGBoost Classifier
+
+### Approach:
+   - Feature selection via correlation filtering.
+   - Train-test split (80/20).
+   - Standardization of numerical features.
+   - Hyperparameter tuning using GridSearchCV.
+
+### Evaluation Metrics:
+   - Accuracy
+   - Precision
+   - Recall
+   - F1 Score
+   - Confusion Matrix
+
+XGBoost outperformed the others in terms of both precision and recall, making it our primary model.
+
+## 5. Insights & Recommendations:
+
+### From the model and data insights, we recommend:
+   - Business loans should be subject to tighter approval criteria due to higher default rates.
+   - Focus marketing on individuals with high Income-to-Loan Ratios.
+   - Consider adding more recent behavioral data to improve prediction power (e.g., transaction patterns).
+
+## 7. References:
