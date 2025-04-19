@@ -115,23 +115,17 @@ This helped refine the features most likely to influence repayment behavior.
 ### We built a supervised classification model using:
    - Logistic Regression
    - Random Forest Classifier
-   - XGBoost Classifier
 
 ### Approach:
    - Feature selection via correlation filtering.
    - Train-test split (80/20).
    - Standardization of numerical features.
-   - Hyperparameter tuning using GridSearchCV.
 
 ### Evaluation Metrics:
    - Accuracy
    - Precision
    - Recall
-   - F1 Score
-   - Confusion Matrix
-
-XGBoost outperformed the others in terms of both precision and recall, making it our primary model.
-
+   
 ## 5. Insights & Recommendations:
 
 ### From the model and data insights, we recommend:
