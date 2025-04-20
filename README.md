@@ -21,8 +21,8 @@ For detailed walkthrough, please view the source code in order from:
 **Group:** 7 
 
 - Chua Yu Hui (U2323111H) 
-- Megan Phua Wei Lin ()
-- Khoo An Xian ()  
+- Megan Phua Wei Lin (U2322539E)
+- Khoo An Xian (U2322918F)  
 
 ---
 
@@ -54,7 +54,7 @@ We experimented with multiple classification algorithms and addressed class imba
 SMOTE was applied to balance the number of Charged Off loans (minority class) with Fully Paid loans during training, significantly improving recall performance on default prediction.
    
 ## 3. Conclusion:
-   - Random Forest with SMOTE and Class Weighting delivered the best balanced performance (accuracy ~81%, recall on Charged Off ~81%).
+   - K-Nearest neighbour with SMOTE delivered the best balanced performance.
    - Business Loans exhibited a notably higher default rate (~30%) and should be considered for stricter lending policies or risk premiums.
    - Applicants with high Income-to-Loan Ratios tend to have better repayment behavior — ideal for targeted marketing or pre-approval campaigns.
    - Including behavioral features like recent spending or repayment patterns (e.g., late payments, transaction trends) could boost model performance and stability.
