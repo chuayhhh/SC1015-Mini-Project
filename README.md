@@ -50,6 +50,7 @@ We experimented with multiple classification algorithms and addressed class imba
    - Random Forest
    - XGBoost
    - K-nearest neighbour (KNN)
+   
 SMOTE was applied to balance the number of Charged Off loans (minority class) with Fully Paid loans during training, significantly improving recall performance on default prediction.
    
 ## 3. Conclusion:
